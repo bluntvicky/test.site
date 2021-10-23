@@ -8,6 +8,9 @@ body {
   max-width: 1194px;
   margin: 0 auto;
 }
+.button {
+  text-decoration: none;
+}
 .header {
   display: flex;
   align-items: center;
@@ -74,4 +77,117 @@ body {
   border-radius: 50%;
   font-size: 8px;
   line-height: 9px;
+}
+.slider-card {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 76px 100px;
+  border-radius: 20px;
+}
+.slide_1 {
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.43) 40.45%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/slide1.png) no-repeat;
+  background-size: cover;
+}
+.font-slider {
+  color: white;
+}
+.slide-title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 51px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.slide-text {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 32px;
+}
+.button {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  text-decoration: none;
+  padding: 12px 52px;
+}
+.button-primary {
+  color: white;
+  background: #f47322;
+  border-radius: 25px;
+}
+.slide-content {
+  max-width: 400px;
+  max-height: 250px;
+}
+.promotion {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.promo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 570px;
+  min-height: 380px;
+  padding: 36px 32px 31px 32px;
+  color: white;
+}
+.promo-1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/promo01.png) no-repeat;
+  background-size: cover;
+  margin-right: 50px;
+}
+.promo-2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../img/promo02.png);
+  background-size: cover;
+}
+.promo-head {
+  max-width: 196px;
+  min-height: 113px;
+}
+.promo-footer {
+  max-width: 232px;
+  min-height: 128px;
+}
+.promo-title {
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+}
+.promo-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  margin-top: 21px;
+}
+.promo-price {
+  display: block;
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+}
+.btn-def {
+  margin-top: 38px;
+  background: #ffffff;
+  color: #5f5f61;
+  border-radius: 50px;
+  width: 100%;
+  text-align: center;
+  padding: 13px;
 }
