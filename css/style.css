@@ -100,7 +100,7 @@ body {
 }
 .slider-card {
   position: relative;
-  min-height: 400px;
+  max-height: 400px;
   display: flex;
   align-items: center;
   padding: 76px 100px;
@@ -175,7 +175,7 @@ body {
   border-radius: 20px;
   width: 100%;
   max-width: 570px;
-  min-height: 380px;
+  max-height: 380px;
   padding: 36px 32px 31px 32px;
   color: white;
   margin: 20px;
@@ -192,7 +192,7 @@ body {
 }
 .promo-head {
   max-width: 196px;
-  min-height: 113px;
+  max-height: 113px;
 }
 .promo-footer {
   max-width: 232px;
@@ -328,7 +328,7 @@ body {
 }
 .categories-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   margin: -18px;
 }
@@ -509,30 +509,248 @@ body {
 .social-links a {
   padding-left: 20px;
 }
-@media (max-width: 960px) {
-  .container {
-    max-width: 660px;
-  }
-  .search-form {
-    margin: 0;
+@media (max-width: 560px) {
+  body {
+    max-width: 380px;
   }
   .img-logo {
     width: 100px;
   }
   .shopping-cart {
     margin: 0;
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
+    padding: 9px;
+    margin-left: 15px;
+    margin-right: 10px;
+  }
+  .shopping-counter {
+    width: 13px;
+    height: 13px;
+    font-size: 7px;
+    padding: 2px;
+    right: -2px;
+    bottom: -3px;
+  }
+  .search-form {
+    margin: 0 10px;
+  }
+  .search-input {
+    padding: 8px;
+    font-size: 10px;
+  }
+  .search-icon {
+    width: 13px;
+    height: 13px;
   }
   .login {
-    padding: 15px 15px;
+    padding: 16px 18px;
+    display: none;
   }
   .slider-card {
-    padding: 10px 30px;
+    padding: 25px 10px;
+    max-height: 200px;
+    margin-bottom: 5px;
+  }
+  .slide-title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 17px;
+    margin-top: 10px;
+  }
+  .slide-text {
+    font-size: 12px;
+    margin: 0;
+    margin-top: 30px;
+  }
+  .promo {
+    max-height: 180px;
+    max-width: 180px;
+    margin: 2px;
+    padding: 15px 8px;
+  }
+  .promo-title {
+    font-size: 15px;
+    line-height: 5px;
+  }
+  .promo-text {
+    font-size: 10px;
+    max-width: 100px;
+    line-height: 15px;
+    margin-top: 17px;
+  }
+  .promo-price {
+    font-size: 12px;
+    margin: 0;
+  }
+  .button {
+    font-size: 10px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    line-height: 18px;
+  }
+  .btn-def {
+    margin-top: 5px;
+  }
+  .btn-def:hover {
+    background-color: transparent;
+    color: inherit;
+    border: 1px solid #5f5f61;
+    padding: 4px 9px;
+  }
+  .deliveri-items {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .delivery-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .delivery-cards {
+    margin: -3px;
+  }
+  .delivery-card {
+    max-width: 120px;
+    max-height: 90px;
+    margin: 3px;
+  }
+  .card-text {
+    padding: 3px 5px;
+    font-size: 12px;
+    line-height: 10px;
+    left: 7px;
+    top: 5px;
+  }
+  .categories-block {
+    padding-bottom: 10px;
+  }
+  .categories-title {
+    padding-top: 8px;
+    font-size: 20px;
+  }
+  .categories {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  .categories li {
+    margin-right: 35px;
+  }
+  .categories-cards {
+    justify-content: space-evenly;
+    margin: 0;
+  }
+  .categories-card {
+    max-width: 130px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .dishes-info {
+    padding: 8px;
+  }
+  .dishes-title {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .description {
+    font-size: 8px;
+    line-height: 10px;
+    padding: 0;
+  }
+  .dishes-coast {
+    font-size: 15px;
+    line-height: 11px;
+    margin-top: 8px;
+  }
+  .dishes-weight {
+    font-size: 8px;
+    line-height: 5px;
+    padding-bottom: 6px;
+  }
+  .btn-basket {
+    bottom: 10px;
+    right: 14px;
+    font-size: 10px;
+    padding: 2px 4px;
+    line-height: 16px;
+  }
+  .btn-more {
+    margin-top: 5px;
+  }
+  .more-dishes {
+    margin: 0;
+  }
+  .features {
+    padding: 0;
+    padding-bottom: 15px;
+  }
+  .features-title {
+    font-size: 20px;
+    line-height: 10px;
+  }
+  .features-cards {
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+  .features-card {
+    max-width: 80px;
+    margin: 0;
+    padding: 20px 5px 10px 5px;
+  }
+  .features-img {
+    max-width: 40px;
+  }
+  .features-card-title {
+    font-size: 10.5px;
+    line-height: 15px;
+    max-width: 70px;
+    margin-bottom: 5px;
+    margin-top: 8px;
+  }
+  .features-card-description {
+    font-size: 9px;
+    line-height: 10px;
+  }
+  .promotion {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 0;
   }
   .slider-btns {
     display: none;
   }
   .features-cards {
+    flex-wrap: wrap;
+  }
+  .footer-wrapper {
+    flex-wrap: wrap;
+  }
+  .footer {
+    padding: 15px 0;
+  }
+  .footer-logo {
+    width: 80px;
+  }
+  .footer-link {
+    padding-left: 5px;
+    margin-left: 20px;
+  }
+  .footer-link li {
+    margin-right: 10px;
+  }
+  .footer-link a {
+    font-size: 8px;
+    line-height: 10px;
+    width: 50px;
+  }
+  .social-links a {
+    padding-left: 5px;
+    margin-right: 5px;
+  }
+  .social-links img {
+    width: 22px;
   }
 }
